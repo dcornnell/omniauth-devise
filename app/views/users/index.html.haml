@@ -1,1 +1,5 @@
-hello!
+- if current_user
+	= current_user.email
+
+=link_to "sign in",  new_user_session_path
+=link_to "sign out",  destroy_user_session_path, method: :delete
